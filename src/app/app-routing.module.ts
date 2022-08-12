@@ -2,6 +2,7 @@ import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.componen
 import { DefaultComponent } from './layouts/default/default.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PostsComponent } from './modules/posts/posts.component';
 
 const routes: Routes = [{
   path: '',
@@ -9,6 +10,9 @@ const routes: Routes = [{
   children: [{
     path: '',
     component: DashboardComponent
+  },{
+    path: 'posts',
+    component: PostsComponent
   }]
 }];
 
