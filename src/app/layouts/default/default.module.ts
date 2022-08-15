@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule } from "@angular/material/sidenav";
-import { MatMenuModule } from "@angular/material/menu";
+import { MatDividerModule } from "@angular/material/divider";
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { MatMenuModule } from "@angular/material/menu";
     RouterModule,
     SharedModule,
     MatSidenavModule,
-  
+    MatDividerModule 
   ]
 })
 export class DefaultModule { }
